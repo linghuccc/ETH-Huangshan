@@ -1,0 +1,24 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+via_ir = true
+optimizer_runs = 1000
+
+[rpc_endpoints]
+holesky = "${HOLESKY_RPC_URL}"
+monad-testnet = "${MONAD_TESTNET_RPC_URL}"
+bsc = "${BSC_RPC_URL}"
+bsc-testnet = "${BSC_TESTNET_RPC_URL}"
+ArbitrumSepolia = "${ARB_SEPOLIA_RPC_URL}"
+
+[etherscan]
+holesky = { key = "${HOLESKY_ETHERSCAN_KEY}" }
+bsc = { key = "${BSC_ETHERSCAN_KEY}" }
+bsc-testnet = { key = "${BSC_ETHERSCAN_KEY}" }
+ArbitrumSepolia = { key = "${ARB_ETHERSCAN_KEY}" }
+
+[dependencies]
+forge-std = "https://github.com/foundry-rs/forge-std"
+
+# See more config options https://github.com/foundry-rs/foundry/tree/master/config
