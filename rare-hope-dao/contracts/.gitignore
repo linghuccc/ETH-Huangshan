@@ -13,3 +13,5 @@ docs/
 
 # Custom
 lib/
+script/
+foundry.toml
